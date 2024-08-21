@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10pxh"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/itemlv"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_18pxv"
+        android:paddingEnd="@dimen/_25pxh"
+        android:paddingStart="@dimen/_25pxh"
+        android:paddingTop="@dimen/_18pxv" style="@style/groupStylewhite_1">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:singleLine="true"
+            android:text="@{adminpageVM.adminpageModel.txtSpp}"
+            style="@style/txtManropebold14_1"
+            />
+        <TextView
+            android:id="@+id/textViewEmpId"
+            android:ellipsize="end"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:singleLine="true"
+            android:text="@{adminpageVM.adminpageModel.txtRp750000}"
+            style="@style/txtManropebold12"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

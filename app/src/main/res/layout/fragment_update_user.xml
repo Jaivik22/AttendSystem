@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentUpdateUser"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/fragmentLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llIndexImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Index Finger" />
+
+            <ImageView
+                android:id="@+id/imgUpdateIndexFinger"
+                android:layout_width="@dimen/_150pxh"
+                android:layout_height="@dimen/_150pxh"
+                android:src="@drawable/baseline_fingerprint_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llThumbImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thumb" />
+
+            <ImageView
+                android:id="@+id/imgUpdateThumb"
+                android:layout_width="@dimen/_150pxh"
+                android:layout_height="@dimen/_150pxh"
+                android:src="@drawable/baseline_fingerprint_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragmentUpdateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20pxh"
+        android:text="Update"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

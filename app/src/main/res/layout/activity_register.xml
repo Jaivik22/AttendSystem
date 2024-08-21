@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearRegister"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_20pxh"
+        android:paddingStart="@dimen/_20pxh"
+        android:paddingTop="@dimen/_20pxv"
+        style="@style/groupStylegray_200">
+        <Switch
+            android:id="@+id/registerInitializeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Inialize"
+            android:textSize="20sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <ImageView
+            android:layout_marginTop="@dimen/_80pxh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/register_page_logo"
+            android:layout_gravity="center"
+            />
+        <TextView android:id="@+id/txtHelloregister"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Hello, Register \nYour Self"
+            style="@style/txtManropebold32" />
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnregister"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRegister"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="Register yourself in Mantra Attendance System"
+                style="@style/txtManroperegular14"/>
+            <EditText
+                android:id="@+id/etName"
+                android:background="@drawable/rectangle_bg_white_a700_border_red_700_radius_8"
+                android:ellipsize="end"
+                android:hint="Write Your Name"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01"
+                android:paddingBottom="@dimen/_29pxv"
+                android:paddingEnd="@dimen/_26pxh"
+                android:paddingStart="@dimen/_26pxh"
+                android:paddingTop="@dimen/_29pxv"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColorHint="@color/pink"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etEmpID"
+            android:background="@drawable/rectangle_bg_white_a700_border_red_700_radius_8"
+            android:ellipsize="end"
+            android:hint="EmployeeID"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:paddingBottom="@dimen/_29pxv"
+            android:paddingEnd="@dimen/_26pxh"
+            android:paddingStart="@dimen/_26pxh"
+            android:paddingTop="@dimen/_29pxv" android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColorHint="@color/pink"
+            style="@style/etSolidRoundedOutline_1" tools:ignore="Autofill"/>
+
+        <TextView
+            android:id="@+id/duplicateIDWarningTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Unique EmployeeId\n This ID is already in use"
+            android:textColor="@color/Red"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:id="@+id/llIndexImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Index Finger"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/imgIndexFinger"
+                    android:layout_width="@dimen/_150pxh"
+                    android:layout_height="@dimen/_150pxh"
+                    android:src="@drawable/baseline_fingerprint_24"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llThumbImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thumb"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/imgThumb"
+                    android:layout_width="@dimen/_150pxh"
+                    android:layout_height="@dimen/_150pxh"
+                    android:src="@drawable/baseline_fingerprint_24"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRecord"
+            android:ellipsize="end" android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_register"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_register"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

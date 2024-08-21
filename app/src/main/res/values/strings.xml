@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AttendSystem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ek_img_content">ExportKit Image</string>
+
+
+    <string name="attendify_string">
+
+<u>ATTENDIFY</u>
+
+</string>
+    <string name="msg_register_yourself">Register yourself in Mantra\u2019s Attendance System</string>
+    <string name="msg_hello_register">Hello, Register
+Your Self&#128075;</string>
+    <string name="msg_invalid_gmail_address">Invalid gmail address</string>
+    <string name="lbl_wrong_password">Wrong Password</string>
+    <string name="lbl_register">Register</string>
+
+    <string name="in_out_tracker_string">IN-OUT Tracker</string>
+
+    <string name="verify_string">Verify</string>
+
+    <string name="register_now_string">Register Now</string>
+
+    <string name="not_registered_yet__string">Not Registered yet?</string>
+    <string name="icons8_biometric_64_2_1">icons8_biometric_64_2__1</string>
+
+</resources>

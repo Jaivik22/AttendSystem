@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/page_mainactivity_ek1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_bg__mainactivity_ek2_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/rectangle_1_shape"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/btnInitialize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Inialize"
+                android:textSize="20dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:checked="false"/>
+
+            <ImageView
+                android:id="@+id/icons8_biometric_64_2__1"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/icons8_biometric_64_2_1"
+                android:src="@drawable/icons8_biometric_64_2__1"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/attendify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attendify_string"
+                android:textColor="@color/_bg__mainactivity_ek2_color"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/in_out_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_out_tracker_string"
+                android:textColor="@color/_bg__mainactivity_ek2_color"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rectangle_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rectangle_2_shape" >
+
+            <ImageView
+                android:id="@+id/imgAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="icons8_admin_80_1"
+                android:src="@drawable/icons8_admin_80_1" />
+
+            <Button
+                android:id="@+id/btnVerify"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/_50pxh"
+                android:paddingRight="@dimen/_50pxh"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgAdmin"
+                android:layout_marginTop="20dp"
+
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/pink"
+                android:gravity="center"
+                android:text="Verify"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnVerify"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="top|center">
+
+                <TextView
+                    android:id="@+id/not_registered_yet_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_registered_yet__string"
+                    android:textColor="@color/_bg__frame_1_ek1_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:text="@string/register_now_string"
+                    android:textColor="@color/register_now_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
